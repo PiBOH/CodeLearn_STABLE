@@ -87,8 +87,7 @@ L'app è compatibile con android 14 o superiore, (ma forse sunziona anche su and
 ---
 ## 📱 APK Prebuildato (Versione 1.0.2f)
 
-Trovi il file apk prebuildato con il nome Basi-della-programmazione_STABLE_V1.0.2c_app-debug.apk
-
+Trovi il file apk prebuildato con il nome CodeLearn_STABLE_V1.0.2f
 Indirizzo link per il download diretto:
 [https://github.com/PiBOH/CodeLearn_STABLE/raw/refs/heads/main/Basi-della-programmazione_STABLE_V1.0.2c_app-debug.apk](https://github.com/PiBOH/CodeLearn_STABLE/raw/refs/heads/main/CodeLearn_STABLE_V1.0.2f.apk)
 
