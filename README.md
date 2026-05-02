@@ -1,0 +1,128 @@
+# CodeLearn — Impara a Programmare   | Versione 1.0.2c
+
+[![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Capacitor](https://img.shields.io/badge/Capacitor-119EFF?logo=capacitor&logoColor=white)](https://capacitorjs.com/)
+
+> >> la versione 1.0.2f è in fase di sviluppo 
+questo è il link per vedere la beta (nessuna installazione,copia e incolla in un browser)
+https://codelearn-73ci.arcada.app
+
+---
+
+## 🚀 Caratteristiche
+
+- **10 linguaggi di programmazione** — Python, JavaScript, Java, Kotlin, Swift, C#, C++, C, PHP, HTML
+- **100+ lezioni** — teoria, esercizi pratici, quiz e progetti
+- **Editor di codice integrato** — con syntax highlighting per tutti i linguaggi
+- **Gamification** — XP, livelli, badge, streak giornalieri, sfide
+- **Percorsi di carriera** — Frontend, Backend, Mobile, Full Stack, Systems, Game Dev
+- **Classifica** — confrontati con altri studenti
+- **PWA + APK Android** — installabile su iOS (via Safari) e Android (via APK)
+
+---
+
+## 📱 Demo
+
+L'app è deployata su Vercel e accessibile da qualsiasi browser moderno senza bisogno di installare niente, funziona su tutti i sistemi operativi (dal link)
+
+
+https://codelearn-73ci.arcada.app
+
+---
+
+## 📦 Installazione
+
+### Prerequisiti
+- Node.js 20+
+- npm
+
+### Clona e avvia
+
+```bash
+git clone <repo-url>
+cd codelearn
+npm install
+npm run dev
+```
+
+L'app sarà disponibile su `http://localhost:5173`.
+
+---
+
+## 🤖 Build APK Android
+
+### Prerequisiti
+- JDK 21
+- Android SDK (platform-tools, platform android-34, build-tools 34.0.0)
+
+### Script rapido
+
+```bash
+chmod +x build-apk.sh
+./build-apk.sh
+```
+
+### Comandi manuali
+
+```bash
+npm run build
+npx cap sync android
+cd android
+./gradlew assembleDebug
+```
+
+L'APK si troverà in `android/app/build/outputs/apk/debug/app-debug.apk`.
+
+---
+## 📱 APK Prebuildato (Versione 1.0.2c)
+
+Trovi il file apk prebuildato con il nome Basi-della-programmazione_STABLE_V1.0.2c_app-debug.apk
+
+Indirizzo link per il download diretto:
+https://github.com/PiBOH/Basi-della-programmazione_STABLE/raw/refs/heads/main/Basi-della-programmazione_STABLE_V1.0.2c_app-debug.apk
+
+L'app è compatibile con android 14 o superiore, (ma forse sunziona anche su android 12 e android 13)
+
+---
+## 📁 Struttura del progetto
+
+```
+codelearn/
+├── src/
+│   ├── components/     # Componenti React
+│   ├── context/        # Stato globale (progressi, utente)
+│   ├── data/           # Dati corsi e lezioni
+│   ├── lib/            # Utility e icone
+│   ├── App.tsx
+│   └── main.tsx
+├── android/            # Progetto Android (Capacitor)
+├── public/             # Asset statici
+├── capacitor.config.ts
+├── vite.config.ts
+├── tailwind.config.js
+└── package.json
+```
+
+---
+
+## 🎯 Stack Tecnologico
+
+| Tecnologia | Uso |
+|------------|-----|
+| Vite | Build tool |
+| React 19 | UI framework |
+| TypeScript | Tipizzazione |
+| Tailwind CSS v4 | Styling |
+| Framer Motion | Animazioni |
+| React Router | Navigazione |
+| Lucide React | Icone |
+| Capacitor | Wrapper mobile nativo |
+
+---
+
+## 📝 Licenza
+
+GNU 3.0

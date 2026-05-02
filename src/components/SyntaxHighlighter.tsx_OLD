@@ -1,0 +1,80 @@
+const KEYWORDS: Record<string, string[]> = {
+  python: ['def', 'return', 'if', 'elif', 'else', 'for', 'in', 'while', 'import', 'from', 'as', 'class', 'try', 'except', 'with', 'print', 'True', 'False', 'None', 'and', 'or', 'not', 'pass', 'break', 'continue'],
+  javascript: ['const', 'let', 'var', 'function', 'return', 'if', 'else', 'for', 'while', 'of', 'in', 'new', 'this', 'class', 'extends', 'import', 'export', 'from', 'try', 'catch', 'async', 'await', 'true', 'false', 'null', 'undefined', 'console', 'log', 'alert', 'document', 'window'],
+  java: ['public', 'private', 'protected', 'static', 'void', 'int', 'double', 'boolean', 'char', 'String', 'class', 'interface', 'extends', 'implements', 'return', 'if', 'else', 'for', 'while', 'new', 'this', 'try', 'catch', 'import', 'package', 'final', 'abstract'],
+  kotlin: ['fun', 'val', 'var', 'class', 'data', 'return', 'if', 'else', 'for', 'while', 'when', 'in', 'is', 'as', 'null', 'true', 'false', 'import', 'package', 'override', 'open', 'abstract', 'interface', 'object', 'companion', 'lateinit', 'init'],
+  swift: ['let', 'var', 'func', 'return', 'if', 'else', 'for', 'while', 'in', 'guard', 'switch', 'case', 'default', 'break', 'continue', 'class', 'struct', 'enum', 'protocol', 'extension', 'import', 'init', 'self', 'nil', 'true', 'false', 'optional', 'try', 'catch'],
+  csharp: ['using', 'namespace', 'class', 'struct', 'interface', 'public', 'private', 'protected', 'static', 'void', 'int', 'string', 'bool', 'double', 'var', 'return', 'if', 'else', 'for', 'foreach', 'while', 'new', 'this', 'async', 'await', 'Task', 'List', 'get', 'set', 'null', 'true', 'false'],
+  cpp: ['include', 'using', 'namespace', 'class', 'struct', 'public', 'private', 'protected', 'virtual', 'static', 'void', 'int', 'double', 'float', 'char', 'bool', 'string', 'return', 'if', 'else', 'for', 'while', 'new', 'delete', 'const', 'auto', 'true', 'false', 'nullptr', 'std', 'cout', 'endl'],
+  c: ['include', 'define', 'void', 'int', 'float', 'double', 'char', 'return', 'if', 'else', 'for', 'while', 'do', 'switch', 'case', 'break', 'continue', 'struct', 'typedef', 'const', 'static', 'extern', 'sizeof', 'NULL', 'printf', 'scanf', 'malloc', 'free'],
+  php: ['<?php', 'echo', 'print', 'function', 'return', 'if', 'else', 'elseif', 'for', 'foreach', 'while', 'class', 'public', 'private', 'protected', 'static', 'new', 'this', 'try', 'catch', 'throw', 'array', 'isset', 'unset', 'true', 'false', 'null', 'global', 'require', 'include'],
+  html: ['!DOCTYPE', 'html', 'head', 'body', 'title', 'meta', 'link', 'script', 'style', 'div', 'span', 'p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'a', 'img', 'ul', 'ol', 'li', 'table', 'tr', 'td', 'th', 'form', 'input', 'button', 'label', 'select', 'option', 'textarea', 'header', 'nav', 'main', 'article', 'section', 'aside', 'footer'],
+};
+
+const TYPES: Record<string, string[]> = {
+  python: ['int', 'str', 'float', 'bool', 'list', 'dict', 'tuple', 'set'],
+  javascript: ['Number', 'String', 'Boolean', 'Array', 'Object', 'Promise'],
+  java: ['int', 'long', 'short', 'byte', 'float', 'double', 'char', 'boolean'],
+  kotlin: ['Int', 'String', 'Double', 'Boolean', 'Float', 'Long', 'Any', 'Unit'],
+  swift: ['Int', 'String', 'Double', 'Bool', 'Float', 'Array', 'Dictionary'],
+  csharp: ['int', 'string', 'bool', 'double', 'float', 'decimal', 'object', 'dynamic'],
+  cpp: ['int', 'double', 'float', 'char', 'bool', 'void', 'auto', 'size_t'],
+  c: ['int', 'float', 'double', 'char', 'void', 'size_t'],
+  php: [],
+  html: [],
+};
+
+function escapeHtml(text: string): string {
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
+
+export function highlightCode(code: string, language: string): string {
+  const lang = language.toLowerCase();
+  const keywords = KEYWORDS[lang] || [];
+  const types = TYPES[lang] || [];
+
+  let html = escapeHtml(code);
+
+  // Comments
+  if (lang === 'python') {
+    html = html.replace(/(#.*$)/gm, '<span class="sh-comment">$1</span>');
+  } else if (lang === 'javascript' || lang === 'java' || lang === 'kotlin' || lang === 'swift' || lang === 'csharp' || lang === 'cpp' || lang === 'c') {
+    html = html.replace(/(\/\/.*$)/gm, '<span class="sh-comment">$1</span>');
+    html = html.replace(/(\/\*[\s\S]*?\*\/)/g, '<span class="sh-comment">$1</span>');
+  } else if (lang === 'php') {
+    html = html.replace(/(\/\/.*$)/gm, '<span class="sh-comment">$1</span>');
+  } else if (lang === 'html') {
+    html = html.replace(/(&lt;!--[\s\S]*?--&gt;)/g, '<span class="sh-comment">$1</span>');
+  }
+
+  // Strings
+  html = html.replace(/("(?:[^"\\]|\\.)*")/g, '<span class="sh-string">$1</span>');
+  html = html.replace(/('(?:[^'\\]|\\.)*')/g, '<span class="sh-string">$1</span>');
+  if (lang === 'javascript') {
+    html = html.replace(/(`(?:[^`\\]|\\.)*`)/g, '<span class="sh-string">$1</span>');
+  }
+
+  // Numbers
+  html = html.replace(/\b(\d+(?:\.\d+)?)\b/g, '<span class="sh-number">$1</span>');
+
+  // Keywords & Types
+  keywords.forEach(kw => {
+    const re = new RegExp(`\\b(${kw})\\b`, 'g');
+    html = html.replace(re, '<span class="sh-keyword">$1</span>');
+  });
+  types.forEach(t => {
+    const re = new RegExp(`\\b(${t})\\b`, 'g');
+    html = html.replace(re, '<span class="sh-type">$1</span>');
+  });
+
+  // HTML tags
+  if (lang === 'html') {
+    html = html.replace(/(&lt;\/?)([\w-]+)/g, '$1<span class="sh-keyword">$2</span>');
+    html = html.replace(/(\s)([\w-]+)(=)/g, '$1<span class="sh-type">$2</span>$3');
+  }
+
+  return html;
+}

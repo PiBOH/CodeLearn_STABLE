@@ -1,0 +1,20 @@
+{
+  "name": "CodeLearn STABLE V1.0.2d",
+  "short_name": "CodeLearn",
+  "description": "CodeLearn STABLE V1.0.2d by PiBOH — App educativa per imparare a programmare: Python, JavaScript, Java, Kotlin, Swift, C#, C++, C, PHP, HTML",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#4f46e5",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "productivity"],
+  "lang": "it"
+}
