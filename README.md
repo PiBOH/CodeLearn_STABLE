@@ -77,11 +77,21 @@ cd android
 L'APK si troverà in `android/app/build/outputs/apk/debug/app-debug.apk`.
 
 ---
-## 📱 APK Prebuildato (Versione 1.0.2c e versione 1.0.2f)
+## 📱 APK Prebuildato (Versione 1.0.2c)
 
 Trovi il file apk prebuildato con il nome Basi-della-programmazione_STABLE_V1.0.2c_app-debug.apk
 
-Indirizzo link per il download diretto (versione 1.0.2c):
+Indirizzo link per il download diretto:
+https://github.com/PiBOH/CodeLearn_STABLE/raw/refs/heads/main/Basi-della-programmazione_STABLE_V1.0.2c_app-debug.apk
+
+L'app è compatibile con android 14 o superiore, (ma forse sunziona anche su android 12 e android 13)
+
+---
+## 📱 APK Prebuildato (Versione 1.0.2f)
+
+Trovi il file apk prebuildato con il nome Basi-della-programmazione_STABLE_V1.0.2c_app-debug.apk
+
+Indirizzo link per il download diretto:
 https://github.com/PiBOH/CodeLearn_STABLE/raw/refs/heads/main/Basi-della-programmazione_STABLE_V1.0.2c_app-debug.apk
 
 L'app è compatibile con android 14 o superiore, (ma forse sunziona anche su android 12 e android 13)
