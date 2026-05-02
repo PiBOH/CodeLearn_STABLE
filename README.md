@@ -74,6 +74,9 @@ cd android
 
 L'APK si troverà in `android/app/build/outputs/apk/debug/app-debug.apk`.
 
+
+><se dopo queste belle istruzioni che ho scritto con fatica e impegno continui a non avere capito niente ti consuglio di usare Claude AI (gratuita) per fare tutto
+
 ---
 ## 📱 APK Prebuildato (Versione 1.0.2f)
 
