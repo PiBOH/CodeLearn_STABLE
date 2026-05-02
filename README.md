@@ -125,4 +125,4 @@ codelearn/
 
 ## 📝 Licenza
 
-GNU 3.0
+GNU GPL v3.0
