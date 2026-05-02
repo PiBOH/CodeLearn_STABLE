@@ -1,4 +1,4 @@
-# CodeLearn — Impara a Programmare   | Versione 1.0.2f
+# CodeLearn — Impara a Programmare   |   Versione 1.0.2f  -> STABILE
 
 [![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)](https://react.dev/)
@@ -6,7 +6,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Capacitor](https://img.shields.io/badge/Capacitor-119EFF?logo=capacitor&logoColor=white)](https://capacitorjs.com/)
 
-> la versione 1.0.2f è in fase di sviluppo <
+| la versione 1.0.2g è in fase di sviluppo |
 
 ---
 
