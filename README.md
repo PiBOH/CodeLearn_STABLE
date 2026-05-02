@@ -1,4 +1,4 @@
-# CodeLearn — Impara a Programmare   | Versione 1.0.2c
+# CodeLearn — Impara a Programmare   | Versione 1.0.2f
 
 [![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)](https://react.dev/)
@@ -24,7 +24,7 @@ https://codelearn-73ci.arcada.app
 
 ---
 
-## 📱 Demo
+## 📱 Demo (solo versione 1.0.2d)
 
 L'app è deployata su Vercel e accessibile da qualsiasi browser moderno senza bisogno di installare niente, funziona su tutti i sistemi operativi (dal link)
 
@@ -77,12 +77,12 @@ cd android
 L'APK si troverà in `android/app/build/outputs/apk/debug/app-debug.apk`.
 
 ---
-## 📱 APK Prebuildato (Versione 1.0.2c)
+## 📱 APK Prebuildato (Versione 1.0.2c e versione 1.0.2f)
 
 Trovi il file apk prebuildato con il nome Basi-della-programmazione_STABLE_V1.0.2c_app-debug.apk
 
-Indirizzo link per il download diretto:
-https://github.com/PiBOH/Basi-della-programmazione_STABLE/raw/refs/heads/main/Basi-della-programmazione_STABLE_V1.0.2c_app-debug.apk
+Indirizzo link per il download diretto (versione 1.0.2c):
+https://github.com/PiBOH/CodeLearn_STABLE/raw/refs/heads/main/Basi-della-programmazione_STABLE_V1.0.2c_app-debug.apk
 
 L'app è compatibile con android 14 o superiore, (ma forse sunziona anche su android 12 e android 13)
 
