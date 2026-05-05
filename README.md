@@ -29,6 +29,8 @@ L'app è deployata su Vercel e accessibile da qualsiasi browser moderno senza bi
 
 https://codelearn-73ci.arcada.app
 
+N.B. questa versione contiene molti bug durante l' esecuzione di vari percorsi (impossibilità di completarli). Quindi se ti interessa usarla come si deve consiglio di scaricare sempre l'ultima versione o fare da sé il deploy (sempre dell'ultima versione)
+
 ---
 
 ## 📦 Installazione
