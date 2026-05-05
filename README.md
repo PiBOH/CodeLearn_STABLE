@@ -22,7 +22,7 @@
 
 ---
 
-## 📱 Demo (solo versione 1.0.2d)
+## 💽 Versione Demo (solo 1.0.2d)
 
 L'app è deployata su Vercel e accessibile da qualsiasi browser moderno senza bisogno di installare niente, funziona su tutti i sistemi operativi (dal link)
 
