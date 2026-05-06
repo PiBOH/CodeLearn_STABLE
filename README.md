@@ -33,7 +33,7 @@ N.B. questa versione contiene molti bug durante l' esecuzione di vari percorsi (
 
 ---
 
-## 📦 Installazione
+## 📦 Installazione (Windows/Mac/Linux)
 
 ### Prerequisiti
 - Node.js 20+
