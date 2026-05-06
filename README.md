@@ -18,7 +18,7 @@
 - **Gamification** — XP, livelli, badge, streak giornalieri, sfide
 - **Percorsi di carriera** — Frontend, Backend, Mobile, Full Stack, Systems, Game Dev
 - **Classifica** — confrontati con altri studenti
-- **PWA + APK Android** — installabile su iOS (via Safari) e Android (via APK)
+- **PWA + APK Android** — installabile su iOS (via Safari -> deploy necessario per ultima versione, altrimenti usa la demo) e Android (via APK)
 
 ---
 
