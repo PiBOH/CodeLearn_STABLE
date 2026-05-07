@@ -6,7 +6,9 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Capacitor](https://img.shields.io/badge/Capacitor-119EFF?logo=capacitor&logoColor=white)](https://capacitorjs.com/)
 
-| la versione `1.0.2g-3` è in fase di sviluppo -> sono previste importanti correzioni ad alcuni corsi che al momento si "interrompono" e ti impediscono di finirli |
+| la versione `1.0.2g` è in fase di sviluppo -> sono previste importanti correzioni ad alcuni corsi che al momento si "interrompono" e ti impediscono di finirli.
+>_Puoi trovere le release e le versioni pre-release qui:_ 
+https://github.com/PiBOH/CodeLearn_STABLE/releases
 
 ---
 
@@ -49,7 +51,7 @@ npm install
 npm run dev
 ```
 
-L'app sarà disponibile su `http://localhost:5173`.
+L'app sarà disponibile all'indirizzo `http://localhost:5173`.
 
 ---
 
