@@ -38,6 +38,7 @@ N.B. questa versione contiene molti bug durante l' esecuzione di vari percorsi (
 ### Prerequisiti
 - Node.js 20+
 - npm
+- java jdk 21
 
 ### Clona e avvia
 
