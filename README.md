@@ -5,10 +5,10 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Capacitor](https://img.shields.io/badge/Capacitor-119EFF?logo=capacitor&logoColor=white)](https://capacitorjs.com/)
+[![GitHub issues](https://img.shields.io/github/issues/PiBOH/CodeLearn_STABLE.svg)]([https://github.com/PiBOH/CodeLearn_STABLE/issues)
 
 | la versione `1.0.2g` è in fase di sviluppo -> sono previste importanti correzioni ad alcuni corsi che al momento si "interrompono" e ti impediscono di finirli.
->_Puoi trovere le release e le versioni pre-release qui:_ 
-https://github.com/PiBOH/CodeLearn_STABLE/releases
+>*Puoi trovere le release e le versioni pre-release qui: https://github.com/PiBOH/CodeLearn_STABLE/releases*
 
 ---
 
