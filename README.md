@@ -5,6 +5,10 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Capacitor](https://img.shields.io/badge/Capacitor-119EFF?logo=capacitor&logoColor=white)](https://capacitorjs.com/)
+[![HTML5](https://img.shields.io/badge/HTML5-ffffff?logo=html5&style=flat&color=0a0808&logoColor=E34F26)](https://html.com/)
+[![Java](https://img.shields.io/badge/Java-ffffff?logo=openjdk&style=flat&color=f34006&logoColor=000000)](https://www.java.com/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ffffff?logo=javascript&style=flat&color=000000&logoColor=F7DF1E)](https://www.javascript.com/)
+![css](https://img.shields.io/badge/css-ffffff?logo=csswizardry&style=flat&color=0c0b0b&logoColor=F43059)
 
 ![Android 14+](https://img.shields.io/badge/Android%2014+-ffffff?logo=android&style=flat&color=0a0808&logoColor=3DDC84)
 ![Windows](https://img.shields.io/badge/Windows-ffffff?logo=windows&style=flat&color=140e0e&logoColor=0190f9)
