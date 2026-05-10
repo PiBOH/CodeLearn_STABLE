@@ -16,6 +16,9 @@
 ![On-line](https://img.shields.io/badge/On--line-ffffff?logo=googlechrome&style=flat&color=000000&logoColor=4285f4)
 
 [![GitHub project issues](https://img.shields.io/github/issues/PiBOH/CodeLearn_STABLE.svg)]([https://github.com/PiBOH/CodeLearn_STABLE/issues)
+[![GitHub forks](https://img.shields.io/github/forks/PiBOH/CodeLearn_STABLE.js.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/PiBOH/CodeLearn_STABLE/network/)
+[![GitHub commits](https://badgen.net/github/commits/PiBOH/CodeLearn_STABLE.js)](https://GitHub.com/PiBOH/CodeLearn_STABLE.js/commit/)
+[![Github all releases](https://img.shields.io/github/downloads/PiBOH/CodeLearn_STABLE.js/total.svg)](https://GitHub.com/PiBOH/CodeLearn_STABLE.js/releases)
 
 
 **N.B.** la versione `1.0.2g` è in fase di sviluppo -> sono previste importanti correzioni ad alcuni corsi che al momento si "interrompono" e ti impediscono di finirli.
