@@ -15,7 +15,7 @@
 ![MacOS](https://img.shields.io/badge/MacOS-ffffff?logo=macos&style=flat&color=000000&logoColor=ff5000)
 ![On-line](https://img.shields.io/badge/On--line-ffffff?logo=googlechrome&style=flat&color=000000&logoColor=4285f4)
 
-![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn_STABLE?link=https%3A%2F%2Fgithub.com%2FPiBOH%2FCodeLearn_STABLE%2Freleases)
+![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn?cacheSeconds=10&link=https%3A%2F%2Fgithub.com%2FPiBOH%2FCodeLearn%2Freleases)
 ![GitHub Release Date](https://img.shields.io/github/release-date/PiBOH/CodeLearn_STABLE?display_date=published_at&style=flat)
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/PiBOH/CodeLearn/total?style=flat&logo=GitHub&cacheSeconds=1)
 ![GitHub forks](https://img.shields.io/github/forks/PiBOH/CodeLearn?style=social&logo=GitHub&cacheSeconds=5)
