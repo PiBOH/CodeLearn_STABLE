@@ -15,10 +15,10 @@
 ![MacOS](https://img.shields.io/badge/MacOS-ffffff?logo=macos&style=flat&color=000000&logoColor=ff5000)
 ![On-line](https://img.shields.io/badge/On--line-ffffff?logo=googlechrome&style=flat&color=000000&logoColor=4285f4)
 
+![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn_STABLE?link=https%3A%2F%2Fgithub.com%2FPiBOH%2FCodeLearn_STABLE%2Freleases)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/PiBOH/CodeLearn_STABLE/total?style=flat&logo=github&link=https%3A%2F%2Fgithub.com%2FPiBOH%2FCodeLearn_STABLE%2Freleases)
+![GitHub last commit](https://img.shields.io/github/last-commit/PiBOH/CodeLearn_STABLE?style=flat)
 [![GitHub project issues](https://img.shields.io/github/issues/PiBOH/CodeLearn_STABLE.svg)]([https://github.com/PiBOH/CodeLearn_STABLE/issues)
-[![GitHub forks](https://img.shields.io/github/forks/PiBOH/CodeLearn_STABLE.js.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/PiBOH/CodeLearn_STABLE/network/)
-[![GitHub commits](https://badgen.net/github/commits/PiBOH/CodeLearn_STABLE.js)](https://GitHub.com/PiBOH/CodeLearn_STABLE.js/commit/)
-[![Github all releases](https://img.shields.io/github/downloads/PiBOH/CodeLearn_STABLE.js/total.svg)](https://GitHub.com/PiBOH/CodeLearn_STABLE.js/releases)
 
 
 **N.B.** la versione `1.0.2g` è in fase di sviluppo -> sono previste importanti correzioni ad alcuni corsi che al momento si "interrompono" e ti impediscono di finirli.
