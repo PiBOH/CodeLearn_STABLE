@@ -16,6 +16,7 @@
 ![On-line](https://img.shields.io/badge/On--line-ffffff?logo=googlechrome&style=flat&color=000000&logoColor=4285f4)
 
 ![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn_STABLE?link=https%3A%2F%2Fgithub.com%2FPiBOH%2FCodeLearn_STABLE%2Freleases)
+![GitHub Release Date](https://img.shields.io/github/release-date/PiBOH/CodeLearn_STABLE?display_date=published_at&style=flat)
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/PiBOH/CodeLearn_STABLE/total?style=flat&logo=github&link=https%3A%2F%2Fgithub.com%2FPiBOH%2FCodeLearn_STABLE%2Freleases)
 ![GitHub last commit](https://img.shields.io/github/last-commit/PiBOH/CodeLearn_STABLE?style=flat)
 [![GitHub project issues](https://img.shields.io/github/issues/PiBOH/CodeLearn_STABLE.svg)]([https://github.com/PiBOH/CodeLearn_STABLE/issues)
