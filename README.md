@@ -5,9 +5,16 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Capacitor](https://img.shields.io/badge/Capacitor-119EFF?logo=capacitor&logoColor=white)](https://capacitorjs.com/)
+
+![Android 14+](https://img.shields.io/badge/Android%2014+-ffffff?logo=android&style=flat&color=0a0808&logoColor=3DDC84)
+![Windows](https://img.shields.io/badge/Windows-ffffff?logo=windows&style=flat&color=140e0e&logoColor=0190f9)
+![MacOS](https://img.shields.io/badge/MacOS-ffffff?logo=macos&style=flat&color=000000&logoColor=ff5000)
+![On-line](https://img.shields.io/badge/On--line-ffffff?logo=googlechrome&style=flat&color=000000&logoColor=4285f4)
+
 [![GitHub project issues](https://img.shields.io/github/issues/PiBOH/CodeLearn_STABLE.svg)]([https://github.com/PiBOH/CodeLearn_STABLE/issues)
 
-| la versione `1.0.2g` è in fase di sviluppo -> sono previste importanti correzioni ad alcuni corsi che al momento si "interrompono" e ti impediscono di finirli.
+
+**N.B.** la versione `1.0.2g` è in fase di sviluppo -> sono previste importanti correzioni ad alcuni corsi che al momento si "interrompono" e ti impediscono di finirli.
 >*Puoi trovere le release e le versioni pre-release qui: https://github.com/PiBOH/CodeLearn_STABLE/releases*
 
 ---
