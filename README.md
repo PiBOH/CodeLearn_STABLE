@@ -74,13 +74,6 @@ L'app sarà disponibile all'indirizzo `http://localhost:5173`.
 - JDK 21
 - Android SDK (platform-tools, platform android-34, build-tools 34.0.0)
 
-### Script rapido
-
-```bash
-chmod +x build-apk.sh
-./build-apk.sh
-```
-
 ### Comandi manuali
 
 ```bash
