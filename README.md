@@ -96,13 +96,13 @@ L'APK si troverà in `android/app/build/outputs/apk/debug/app-debug.apk`.
 >se dopo queste belle istruzioni che ho scritto con fatica e impegno continui a non avere capito niente ti consuglio di usare Claude AI (gratuita) per fare tutto.
 
 ---
-## 📱 APK Prebuildato (Versione 1.0.2f)
+## 📱 APK Prebuildato (Versione 1.0.2g-12)
 
-Trovi il file apk prebuildato con il nome CodeLearn_STABLE_V1.0.2f
+Trovi il file apk prebuildato con il nome CodeLearn_STABLE_V1.0.2g-12
 
 Nel caso tu non lo riesca a trovare lascio qui l'indirizzo link diretto per il download del file:
 
-_https://github.com/PiBOH/CodeLearn/raw/refs/heads/main/CodeLearn_STABLE_V1.0.2f.apk_
+_https://github.com/PiBOH/CodeLearn/raw/refs/heads/main/CodeLearn_STABLE_V1.0.2g-12.apk_
 
 L'app è compatibile con android 14 o superiore, (ma forse sunziona anche su android 12 e android 13)
 
