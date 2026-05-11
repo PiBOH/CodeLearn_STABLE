@@ -24,7 +24,7 @@
 
 
 **N.B.** la versione `1.0.2g` è in fase di sviluppo -> sono previste importanti correzioni ad alcuni corsi che al momento si "interrompono" e ti impediscono di finirli.
->*Puoi trovere le release e le versioni pre-release qui: https://github.com/PiBOH/CodeLearn_STABLE/releases*
+>*Puoi trovere tutte le release e pre-release qui: https://github.com/PiBOH/CodeLearn_STABLE/releases*
 
 ---
 
