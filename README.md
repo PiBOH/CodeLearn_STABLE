@@ -1,4 +1,4 @@
-# CodeLearn — Impara a Programmare   |   Versione 1.0.2g-12  -> STABILE
+# CodeLearn — Impara a Programmare   |   Versione 1.0.2g-12 ->  STABILE
 
 [![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)](https://react.dev/)
