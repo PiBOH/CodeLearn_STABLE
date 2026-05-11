@@ -31,6 +31,36 @@ function escapeHtml(text: string): string {
     .replace(/>/g, '&gt;');
 }
 
+// FIX V1.0.2g: Highlight plain text by tokenising on raw text BEFORE escaping HTML.
+// Previously, numbers were wrapped first (e.g. <span class="sh-number">1</span>),
+// then keyword regexes ran on the resulting HTML string and matched "class" inside
+// the generated attribute, producing corrupted output like class="sh-keyword">class=.
+// Now we split the raw text into word/number/separator tokens and classify each one
+// individually, escaping HTML only at the very last moment.
+function highlightPlain(text: string, keywords: string[], types: string[]): string {
+  // Match: identifier-like words, numeric literals, or any run of non-word chars.
+  const tokenRe = /([A-Za-z_$][A-Za-z0-9_$]*|\d+(?:\.\d+)?|[^A-Za-z0-9_$]+)/g;
+  let result = '';
+  let match: RegExpExecArray | null;
+
+  while ((match = tokenRe.exec(text)) !== null) {
+    const tok = match[0];
+    const escaped = escapeHtml(tok);
+
+    if (/^\d+(\.\d+)?$/.test(tok)) {
+      result += `<span class="sh-number">${escaped}</span>`;
+    } else if (keywords.includes(tok)) {
+      result += `<span class="sh-keyword">${escaped}</span>`;
+    } else if (types.includes(tok)) {
+      result += `<span class="sh-type">${escaped}</span>`;
+    } else {
+      result += escaped;
+    }
+  }
+
+  return result;
+}
+
 // Splits code into tokens: strings, comments, and plain code segments
 // so we only highlight keywords in plain code, never inside strings/comments
 function tokenize(code: string, lang: string): Array<{ type: 'plain' | 'string' | 'comment'; value: string }> {
@@ -123,26 +153,8 @@ export function highlightCode(code: string, language: string): string {
     if (token.type === 'string') {
       return `<span class="sh-string">${escapeHtml(token.value)}</span>`;
     }
-
-    // Plain code: escape then highlight keywords, types, numbers
-    let html = escapeHtml(token.value);
-
-    // Numbers
-    html = html.replace(/\b(\d+(?:\.\d+)?)\b/g, '<span class="sh-number">$1</span>');
-
-    // Keywords
-    keywords.forEach(kw => {
-      const re = new RegExp(`\\b(${kw})\\b`, 'g');
-      html = html.replace(re, '<span class="sh-keyword">$1</span>');
-    });
-
-    // Types
-    types.forEach(t => {
-      const re = new RegExp(`\\b(${t})\\b`, 'g');
-      html = html.replace(re, '<span class="sh-type">$1</span>');
-    });
-
-    return html;
+    // Plain code: use the fixed highlightPlain that works on raw text
+    return highlightPlain(token.value, keywords, types);
   });
 
   return parts.join('');
