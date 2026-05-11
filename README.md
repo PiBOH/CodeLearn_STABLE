@@ -1,4 +1,4 @@
-# CodeLearn — Impara a Programmare   |   Versione 1.0.2g-13 ->  STABILE
+# CodeLearn — Impara a Programmare   |   Versione 1.0.2g-13
 
 [![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)](https://react.dev/)
@@ -37,7 +37,7 @@
 
 ---
 
-## 💽 Versione Demo (solo 1.0.2d)
+## 💽 Prova Versione Demo (solo 1.0.2d)
 
 L'app è deployata su Vercel e accessibile da qualsiasi browser moderno senza bisogno di installare niente, funziona su tutti i sistemi operativi (dal link)
 
@@ -102,7 +102,7 @@ Trovi il file apk prebuildato con il nome CodeLearn_STABLE_V1.0.2g-13
 
 Nel caso tu non lo riesca a trovare lascio qui l'indirizzo link diretto per il download del file:
 
-_https://github.com/PiBOH/CodeLearn/raw/refs/heads/main/CodeLearn_STABLE_V1.0.2g-12.apk_
+*https://github.com/PiBOH/CodeLearn/raw/refs/heads/main/CodeLearn_STABLE_V1.0.2g-13.apk*
 
 L'app è compatibile con android 14 o superiore, (ma forse sunziona anche su android 12 e android 13)
 
