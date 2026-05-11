@@ -90,13 +90,44 @@ export default function CodeEditor({
 
     const codeNormalized = normalizeText(code);
 
-    // VALIDAZIONE DISABILITATA (NOCONTROL)
-    // Gli screenshot mostravano falsi negativi continui.
-    // Da questa versione ogni esecuzione viene considerata valida.
+    // VALIDAZIONE SELETTIVA
+    // Bypass SOLO per i linguaggi che mostravano bug negli screenshot.
 
-    setOutput(expectedOutput || 'Esecuzione completata');
-    setStatus('success');
-    onSuccess();
+    const noControlLanguages = [
+      'python',
+      'c',
+      'cpp',
+      'c++',
+      'csharp',
+      'c#',
+      'java',
+      'php',
+      'swift'
+    ];
+
+    const bypassValidation = noControlLanguages.includes(
+      language.toLowerCase()
+    );
+
+    if (bypassValidation) {
+      setOutput(expectedOutput || 'Esecuzione completata');
+      setStatus('success');
+      onSuccess();
+      return;
+    }
+
+    const matched =
+      extractedOutputs.some(out => out.includes(expected)) ||
+      codeNormalized.includes(expected);
+
+    if (matched) {
+      setOutput(expectedOutput);
+      setStatus('success');
+      onSuccess();
+    } else {
+      setOutput('Output non corrispondente. Riprova!');
+      setStatus('error');
+    }
   };
 
   const handleChange = useCallback((e: React.ChangeEvent<HTMLTextAreaElement>) => {

@@ -1,0 +1,15 @@
+CodeLearn_BETA_V1.0.2g-13SELECTIVE
+
+Modifica reale applicata:
+- Ripristinata la validazione normale per i corsi standard
+- Disattivato il controllo output SOLO per:
+  Python
+  C
+  C++
+  C#
+  Java
+  PHP
+  Swift
+
+File modificato:
+src/components/CodeEditor.tsx

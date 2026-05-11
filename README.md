@@ -1,4 +1,4 @@
-# CodeLearn — Impara a Programmare   |   Versione 1.0.2f ->  STABILE
+# CodeLearn — Impara a Programmare   |   Versione 1.0.2g-12 ->  STABILE
 
 [![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)](https://react.dev/)
@@ -15,7 +15,7 @@
 ![MacOS](https://img.shields.io/badge/MacOS-ffffff?logo=macos&style=flat&color=000000&logoColor=ff5000)
 ![On-line](https://img.shields.io/badge/On--line-ffffff?logo=googlechrome&style=flat&color=000000&logoColor=4285f4)
 
-[![GitHub Latest Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn?cacheSeconds=10&link=https%3A%2F%2Fgithub.com%2FPiBOH%2FCodeLearn%2Freleases)](https://github.com/PiBOH/CodeLearn/releases)
+[![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn?cacheSeconds=10&link=https%3A%2F%2Fgithub.com%2FPiBOH%2FCodeLearn%2Freleases)](https://github.com/PiBOH/CodeLearn/releases)
 [![GitHub Release Date](https://img.shields.io/github/release-date/PiBOH/CodeLearn?display_date=published_at&style=flat)](https://github.com/PiBOH/CodeLearn/releases)
 [![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/PiBOH/CodeLearn/total?style=flat&logo=GitHub&cacheSeconds=1)](https://github.com/PiBOH/CodeLearn/releases)
 ![GitHub forks](https://img.shields.io/github/forks/PiBOH/CodeLearn?style=social&logo=GitHub&cacheSeconds=5)
@@ -96,9 +96,9 @@ L'APK si troverà in `android/app/build/outputs/apk/debug/app-debug.apk`.
 >se dopo queste belle istruzioni che ho scritto con fatica e impegno continui a non avere capito niente ti consuglio di usare Claude AI (gratuita) per fare tutto.
 
 ---
-## 📱 APK Prebuildato (Versione 1.0.2g-12)
+## 📱 APK Prebuildato (Versione 1.0.2g-13)
 
-Trovi il file apk prebuildato con il nome CodeLearn_STABLE_V1.0.2g-12
+Trovi il file apk prebuildato con il nome CodeLearn_STABLE_V1.0.2g-13
 
 Nel caso tu non lo riesca a trovare lascio qui l'indirizzo link diretto per il download del file:
 

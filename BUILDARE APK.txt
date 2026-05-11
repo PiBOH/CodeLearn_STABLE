@@ -9,6 +9,7 @@ il file apk si troverà in
 
 
 se la vuoi usare su un dispositivo non android usa
+
 Remove-Item -Recurse -Force node_modules
 Remove-Item package-lock.json
 npm install
