@@ -20,11 +20,11 @@
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/PiBOH/CodeLearn/total?style=flat&logo=GitHub&cacheSeconds=1)
 ![GitHub forks](https://img.shields.io/github/forks/PiBOH/CodeLearn?style=social&logo=GitHub&cacheSeconds=5)
 ![GitHub last commit](https://img.shields.io/github/last-commit/PiBOH/CodeLearn?style=flat)
-[![GitHub project issues](https://img.shields.io/github/issues/PiBOH/CodeLearn.svg)]([https://github.com/PiBOH/CodeLearn_STABLE/issues)
+[![GitHub project issues](https://img.shields.io/github/issues/PiBOH/CodeLearn.svg)]([https://github.com/PiBOH/CodeLearn/issues)
 
 
 **N.B.** la versione `1.0.2g` è in fase di sviluppo -> sono previste importanti correzioni ad alcuni corsi che al momento si "interrompono" e ti impediscono di finirli.
->*Puoi trovere tutte le release e pre-release qui: https://github.com/PiBOH/CodeLearn_STABLE/releases*
+>*Puoi trovere tutte le release e pre-release qui: https://github.com/PiBOH/CodeLearn/releases*
 
 ---
 
@@ -105,7 +105,7 @@ Trovi il file apk prebuildato con il nome CodeLearn_STABLE_V1.0.2f
 
 Nel caso tu non lo riesca a trovare lascio qui l'indirizzo link diretto per il download del file:
 
-_https://github.com/PiBOH/CodeLearn_STABLE/raw/refs/heads/main/CodeLearn_STABLE_V1.0.2f.apk_
+_https://github.com/PiBOH/CodeLearn/raw/refs/heads/main/CodeLearn_STABLE_V1.0.2f.apk_
 
 L'app è compatibile con android 14 o superiore, (ma forse sunziona anche su android 12 e android 13)
 
