@@ -98,7 +98,7 @@ Nel caso tu non lo riesca a trovare lascio qui l'indirizzo link diretto per il d
 *https://github.com/user-attachments/files/27607813/CodeLearn_STABLE_V1.0.2g-13SELECTIVENOCONTROL_SOLO.APK.PREBUILDATO.zip*
 
 
-> *nel caso non deovesse funzionare usa questo:
+> *nel caso non deovesse funzionare usa questo:*
 >
 >*https://github.com/PiBOH/CodeLearn/raw/refs/heads/main/CodeLearn_STABLE_V1.0.2g-13.apk*
 
