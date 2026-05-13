@@ -11,7 +11,7 @@
 ![css](https://img.shields.io/badge/css-ffffff?logo=csswizardry&style=flat&color=0c0b0b&logoColor=F43059)
 
 ![Android 14+](https://img.shields.io/badge/Android%2014+-ffffff?logo=android&style=flat&color=0a0808&logoColor=3DDC84)
-![Windows](https://img.shields.io/badge/Windows-ffffff?logo=windows&style=flat&color=140e0e&logoColor=0190f9)
+[![Windows](https://badgen.net/badge/icon/windows?icon=windows&label)](https://microsoft.com/windows/)
 ![MacOS](https://img.shields.io/badge/MacOS-ffffff?logo=macos&style=flat&color=000000&logoColor=ff5000)
 ![On-line](https://img.shields.io/badge/On--line-ffffff?logo=googlechrome&style=flat&color=000000&logoColor=4285f4)
 
@@ -89,20 +89,10 @@ L'APK si troverà in `android/app/build/outputs/apk/debug/app-debug.apk`.
 >se dopo queste belle istruzioni che ho scritto con fatica e impegno continui a non avere capito niente ti consuglio di usare Claude AI (gratuita) per fare tutto.
 
 ---
-## 📱 APK Prebuildato (Versione 1.0.2g-13)
+## 📱 APK Prebuildato [![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn?cacheSeconds=10&link=https%3A%2F%2Fgithub.com%2FPiBOH%2FCodeLearn%2Freleases)]
 
-Trovi il file apk prebuildato con il nome CodeLearn_STABLE_V1.0.2g-13
+Mi alla pagina delle [![Release](https://img.shields.io/badge/Release-ffffff?style=flat&color=121212)](https://github.com/PiBOH/CodeLearn/releases)
 
-Nel caso tu non lo riesca a trovare lascio qui l'indirizzo link diretto per il download del file:
-
-*https://github.com/user-attachments/files/27607813/CodeLearn_STABLE_V1.0.2g-13SELECTIVENOCONTROL_SOLO.APK.PREBUILDATO.zip*
-
-
-> *nel caso non deovesse funzionare usa questo:*
->
->*https://github.com/PiBOH/CodeLearn/raw/refs/heads/main/CodeLearn_STABLE_V1.0.2g-13.apk*
-
-L'app è compatibile con android 14 o superiore, (ma forse sunziona anche su android 12 e android 13)
 
 ---
 ## 📁 Struttura del progetto
