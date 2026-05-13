@@ -37,14 +37,18 @@
 
 ---
 
-## 💽 Prova Versione Demo (solo 1.0.2d)
+## 💽 Prova Versione Demo
 
 L'app è deployata su Vercel e accessibile da qualsiasi browser moderno senza bisogno di installare niente, funziona su tutti i sistemi operativi (dal link)
 
+[![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn?cacheSeconds=10&link=https%3A%2F%2Fgithub.com%2FPiBOH%2FCodeLearn%2Freleases)]
+https://code-learn-ruddy.vercel.app/
 
+![release](https://img.shields.io/badge/release-1.0.2d-ffffff?style=flat&color=21a7f5)
 https://codelearn-73ci.arcada.app
 
-N.B. questa versione contiene molti bug durante l' esecuzione di vari percorsi (impossibilità di completarli). Quindi se ti interessa usarla come si deve consiglio di scaricare sempre l'ultima versione o fare da sé il deploy (sempre dell'ultima versione)
+N.B. la versione ![release](https://img.shields.io/badge/release-1.0.2d-ffffff?style=flat&color=21a7f5) contiene molti bug durante l' esecuzione di vari percorsi (impossibilità di completarli). Quindi se ti interessa usarla come si deve consiglio di usare la demo della [![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn?cacheSeconds=10&link=https%3A%2F%2Fgithub.com%2FPiBOH%2FCodeLearn%2Freleases)]
+oppure di scaricarti sempre l'ultima versione o fare da te il deploy
 
 ---
 
