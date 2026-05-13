@@ -99,7 +99,7 @@ Nel caso tu non lo riesca a trovare lascio qui l'indirizzo link diretto per il d
 
 
 > *nel caso non deovesse funzionare usa questo:
-
+>
 >*https://github.com/PiBOH/CodeLearn/raw/refs/heads/main/CodeLearn_STABLE_V1.0.2g-13.apk*
 
 L'app è compatibile con android 14 o superiore, (ma forse sunziona anche su android 12 e android 13)
