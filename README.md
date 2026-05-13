@@ -95,7 +95,12 @@ Trovi il file apk prebuildato con il nome CodeLearn_STABLE_V1.0.2g-13
 
 Nel caso tu non lo riesca a trovare lascio qui l'indirizzo link diretto per il download del file:
 
-*https://github.com/PiBOH/CodeLearn/raw/refs/heads/main/CodeLearn_STABLE_V1.0.2g-13.apk*
+*https://github.com/user-attachments/files/27607813/CodeLearn_STABLE_V1.0.2g-13SELECTIVENOCONTROL_SOLO.APK.PREBUILDATO.zip*
+
+
+> *nel caso non deovesse funzionare usa questo:
+
+>*https://github.com/PiBOH/CodeLearn/raw/refs/heads/main/CodeLearn_STABLE_V1.0.2g-13.apk*
 
 L'app è compatibile con android 14 o superiore, (ma forse sunziona anche su android 12 e android 13)
 
