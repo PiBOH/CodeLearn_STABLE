@@ -23,6 +23,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/PiBOH/CodeLearn?style=flat)
 [![GitHub project issues](https://img.shields.io/github/issues/PiBOH/CodeLearn.svg)]([https://github.com/PiBOH/CodeLearn/issues)
 
+![GitHub License](https://img.shields.io/github/license/PiBOH/CodeLearn?style=flat&cacheSeconds=1)
 
 ---
 
@@ -140,3 +141,5 @@ codelearn/
 ## 📝 Licenza
 
 GNU GPL v3.0
+
+![GitHub License](https://img.shields.io/github/license/PiBOH/CodeLearn?style=flat&cacheSeconds=1)
