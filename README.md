@@ -48,6 +48,7 @@ L'app è deployata su Vercel e accessibile da qualsiasi browser moderno senza bi
 [![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn?include_prereleases&style=flat&cacheSeconds=1)](https://code-learn-ruddy.vercel.app/
 )
 https://code-learn-ruddy.vercel.app/
+(puoi usare la demo anche per testare le beta release)
 
 [![release](https://img.shields.io/badge/release-1.0.2d-ffffff?style=flat&color=21a7f5)](https://github.com/PiBOH/CodeLearn/releases)
 https://codelearn-73ci.arcada.app
