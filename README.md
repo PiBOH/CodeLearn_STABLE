@@ -98,7 +98,7 @@ L'APK si troverà in `android/app/build/outputs/apk/debug/app-debug.apk`.
 ---
 ## 📱 APK Prebuildato ![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn?cacheSeconds=1&link=https%3A%2F%2Fgithub.com%2FPiBOH%2FCodeLearn%2Freleases)
 
-Mi alla pagina delle [![Release](https://img.shields.io/badge/Release-ffffff?style=flat&color=121212)](https://github.com/PiBOH/CodeLearn/releases)
+Mi trovi alla pagina delle [![Release](https://img.shields.io/badge/Release-ffffff?style=flat&color=121212)](https://github.com/PiBOH/CodeLearn/releases)
 
 
 ---
