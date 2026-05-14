@@ -45,16 +45,20 @@
 
 L'app è deployata su Vercel e accessibile da qualsiasi browser moderno senza bisogno di installare niente, funziona su tutti i sistemi operativi (dal link)
 
-[![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn?include_prereleases&style=flat&cacheSeconds=1)](https://code-learn-ruddy.vercel.app/
-)
-https://code-learn-ruddy.vercel.app/
-(puoi usare la demo anche per testare le beta release)
+[![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn?include_prereleases&style=flat-square&cacheSeconds=1)
+](https://code-learn-ruddy.vercel.app/
+) 
+ https://code-learn-ruddy.vercel.app/
 
-[![release](https://img.shields.io/badge/release-1.0.2d-ffffff?style=flat&color=21a7f5)](https://github.com/PiBOH/CodeLearn/releases)
-https://codelearn-73ci.arcada.app
+*(se la versione è su sfondo arancione allora aprendo il link potrai usare una pre-release, se invece ha lo sfondo azzurro allora vuoldire he aprendo il link userai una release stabile)*
+
+
+[![release](https://img.shields.io/badge/release-1.0.2d-ffffff?style=flat&color=21a7f5)](https://codelearn-73ci.arcada.app)
+ https://codelearn-73ci.arcada.app
 
 N.B. la ![release](https://img.shields.io/badge/release-1.0.2d-ffffff?style=flat&color=21a7f5) contiene molti bug durante l' esecuzione di vari percorsi (impossibilità di completarli).
-Quindi se ti interessa usarla come si deve consiglio di usare la demo della ![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn?cacheSeconds=10&link=https%3A%2F%2Fgithub.com%2FPiBOH%2FCodeLearn%2Freleases)
+Quindi se ti interessa usarla come si deve consiglio di usare la demo della [![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn?include_prereleases&style=flat&cacheSeconds=1)](https://code-learn-ruddy.vercel.app/
+)
 oppure di scaricarti sempre l'ultima versione o fare da te il deploy
 
 ---
