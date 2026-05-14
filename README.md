@@ -45,10 +45,11 @@
 
 L'app è deployata su Vercel e accessibile da qualsiasi browser moderno senza bisogno di installare niente, funziona su tutti i sistemi operativi (dal link)
 
-![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn?cacheSeconds=1&link=https%3A%2F%2Fgithub.com%2FPiBOH%2FCodeLearn%2Freleases)
+[![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn?include_prereleases&style=flat&cacheSeconds=1)](https://code-learn-ruddy.vercel.app/
+)
 https://code-learn-ruddy.vercel.app/
 
-![release](https://img.shields.io/badge/release-1.0.2d-ffffff?style=flat&color=21a7f5)
+[![release](https://img.shields.io/badge/release-1.0.2d-ffffff?style=flat&color=21a7f5)](https://github.com/PiBOH/CodeLearn/releases)
 https://codelearn-73ci.arcada.app
 
 N.B. la ![release](https://img.shields.io/badge/release-1.0.2d-ffffff?style=flat&color=21a7f5) contiene molti bug durante l' esecuzione di vari percorsi (impossibilità di completarli).
