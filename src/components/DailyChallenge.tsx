@@ -3,6 +3,18 @@ import { motion } from 'framer-motion';
 import { Trophy, Clock, Zap, ChevronRight, CheckCircle2, XCircle } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
+import { useToast } from '../context/ToastContext';
+
+const BADGE_TOASTS: Record<string, string> = {
+  'first-step':  '🎯 Badge sbloccato: Primo Passo!',
+  'explorer':    '⚡ Badge sbloccato: Esploratore!',
+  'coder':       '💻 Badge sbloccato: Coder!',
+  'rocket':      '🚀 Badge sbloccato: Razzo!',
+  'master':      '⭐ Badge sbloccato: Maestro!',
+  'crown':       '👑 Badge sbloccato: Re del Codice!',
+  'streak-7':    '🔥 Badge sbloccato: Fiamma Settimanale!',
+  'polyglot':    '🌐 Badge sbloccato: Poliglotta!',
+};
 
 interface Challenge {
   id: string;
@@ -33,6 +45,16 @@ export default function DailyChallenge() {
   const [challenge] = useState(getDailyChallenge);
   const [timeLeft, setTimeLeft] = useState('');
   const { hasCompleted, completeLesson } = useApp();
+  const { showToast } = useToast();
+
+  const handleBadges = (ids: string[]) => {
+    ids.forEach((id, i) => {
+      setTimeout(() => {
+        const msg = BADGE_TOASTS[id] ?? `🏅 Badge sbloccato: ${id}`;
+        showToast(msg, 'success');
+      }, i * 600);
+    });
+  };
   const navigate = useNavigate();
   const completed = hasCompleted(challenge.lessonId);
 
@@ -94,7 +116,7 @@ export default function DailyChallenge() {
         <button
           onClick={() => {
             if (completed) {
-              completeLesson(challenge.lessonId, challenge.courseId, challenge.xp);
+              completeLesson(challenge.lessonId, challenge.courseId, challenge.xp, handleBadges);
             }
             navigate(`/lesson/${challenge.lessonId}`);
           }}

@@ -21,15 +21,11 @@
 [![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/PiBOH/CodeLearn/total?style=flat&logo=GitHub&cacheSeconds=1)](https://github.com/PiBOH/CodeLearn/releases)
 ![GitHub forks](https://img.shields.io/github/forks/PiBOH/CodeLearn?style=social&logo=GitHub&cacheSeconds=1)
 ![GitHub last commit](https://img.shields.io/github/last-commit/PiBOH/CodeLearn?style=flat)
-[![GitHub project issues](https://img.shields.io/github/issues/PiBOH/CodeLearn.svg)]([https://github.com/PiBOH/CodeLearn/issues)
+[![GitHub project issues](https://img.shields.io/github/issues/PiBOH/CodeLearn.svg)](https://github.com/PiBOH/CodeLearn/issues)
 
 ![GitHub License](https://img.shields.io/github/license/PiBOH/CodeLearn?style=flat&cacheSeconds=1)
 
 ---
->la versione 1.0.2i è in fase di sviluppo. (fix della streack non funzionante)
->
->la versione 1.0.2j è in fase di sviluppo. (fix di alcuni badge non funzionanti...)
-***
 
 ## 🚀 Caratteristiche
 
@@ -48,9 +44,7 @@
 L'app viene deployata automaticamente su Vercel e accessibile da qualsiasi browser moderno senza bisogno di installare niente, funziona su tutti i sistemi operativi (dal link)
 
 https://code-learn-ruddy.vercel.app/  
-[![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn?include_prereleases&style=flat-square&cacheSeconds=1)
-](https://code-learn-ruddy.vercel.app/
-) 
+[![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn?include_prereleases&style=flat-square&cacheSeconds=1)](https://code-learn-ruddy.vercel.app/) 
  
 *(se la versione è su sfondo arancione allora aprendo il link potrai usare una pre-release, se invece ha lo sfondo azzurro allora vuoldire he aprendo il link userai una release stabile)*
 

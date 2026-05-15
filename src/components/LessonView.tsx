@@ -4,13 +4,35 @@ import { ArrowLeft, BookOpen, Code2, HelpCircle, CheckCircle2, XCircle, RotateCc
 import { useState } from 'react';
 import { getLessonsByCourse, type Lesson } from '../data/courses';
 import { useApp } from '../context/AppContext';
+import { useToast } from '../context/ToastContext';
 import CodeEditor from './CodeEditor';
 import CodeExample from './CodeExample';
+
+const BADGE_TOASTS: Record<string, string> = {
+  'first-step':  '🎯 Badge sbloccato: Primo Passo!',
+  'explorer':    '⚡ Badge sbloccato: Esploratore!',
+  'coder':       '💻 Badge sbloccato: Coder!',
+  'rocket':      '🚀 Badge sbloccato: Razzo!',
+  'master':      '⭐ Badge sbloccato: Maestro!',
+  'crown':       '👑 Badge sbloccato: Re del Codice!',
+  'streak-7':    '🔥 Badge sbloccato: Fiamma Settimanale!',
+  'polyglot':    '🌐 Badge sbloccato: Poliglotta!',
+};
 
 export default function LessonView() {
   const { lessonId } = useParams<{ lessonId: string }>();
   const navigate = useNavigate();
   const { hasCompleted, completeLesson } = useApp();
+  const { showToast } = useToast();
+
+  const handleBadges = (ids: string[]) => {
+    ids.forEach((id, i) => {
+      setTimeout(() => {
+        const msg = BADGE_TOASTS[id] ?? `🏅 Badge sbloccato: ${id}`;
+        showToast(msg, 'success');
+      }, i * 600);
+    });
+  };
 
   let lesson: Lesson | undefined;
   let courseLessons: Lesson[] = [];
@@ -42,7 +64,7 @@ export default function LessonView() {
 
   const handleComplete = () => {
     if (!completed) {
-      completeLesson(lesson.id, lesson.courseId, lesson.xp);
+      completeLesson(lesson.id, lesson.courseId, lesson.xp, handleBadges);
     }
     setShowSuccess(true);
   };

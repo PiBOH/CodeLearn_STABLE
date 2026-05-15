@@ -64,7 +64,7 @@ function evaluateBadges(
 
 interface AppContextType {
   progress: UserProgress;
-  completeLesson: (lessonId: string, courseId: string, xp: number) => void;
+  completeLesson: (lessonId: string, courseId: string, xp: number, onNewBadges?: (ids: string[]) => void) => void;
   hasCompleted: (lessonId: string) => boolean;
   getCourseProgress: (courseId: string, totalLessons: number) => number;
   unlockBadge: (badgeId: string) => void;
@@ -107,7 +107,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     });
   }, []);
 
-  const completeLesson = useCallback((lessonId: string, courseId: string, xp: number) => {
+  const completeLesson = useCallback((lessonId: string, courseId: string, xp: number, onNewBadges?: (ids: string[]) => void) => {
     setProgress(prev => {
       if (prev.completedLessons.includes(lessonId)) return prev;
 
@@ -139,6 +139,12 @@ export function AppProvider({ children }: { children: ReactNode }) {
         newStarted.length,
         [...prev.badges],
       );
+
+      // Callback con i badge appena sbloccati in questa sessione
+      const justUnlocked = newBadges.filter(id => !prev.badges.includes(id));
+      if (justUnlocked.length > 0) {
+        setTimeout(() => onNewBadges?.(justUnlocked), 300);
+      }
 
       const next: UserProgress = {
         ...prev,
