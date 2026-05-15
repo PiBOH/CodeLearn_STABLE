@@ -1,7 +1,7 @@
 {
-  "name": "CodeLearn BETA V1.0.2h-2 -- PiBOH",
+  "name": "CodeLearn BETA V1.0.2j-1 -- PiBOH",
   "short_name": "CodeLearn",
-  "description": "CodeLearn BETA V1.0.2h-2 by PiBOH — App educativa per imparare a programmare: Python, JavaScript, Java, Kotlin, Swift, C#, C++, C, PHP, HTML",
+  "description": "CodeLearn BETA V1.0.2j-1 by PiBOH — App educativa per imparare a programmare: Python, JavaScript, Java, Kotlin, Swift, C#, C++, C, PHP, HTML",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f8fafc",

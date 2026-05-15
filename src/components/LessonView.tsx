@@ -109,7 +109,7 @@ export default function LessonView() {
             expectedOutput={lesson.expectedOutput || ''}
             onSuccess={handleCodeSuccess}
             completed={completed}
-            language={lesson.courseId === 'csharp' ? 'csharp' : lesson.courseId}
+            language={lesson.courseId === 'csharp' ? 'cpp' : lesson.courseId}
           />
         </>
       )}
