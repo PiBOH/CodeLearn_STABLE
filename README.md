@@ -1,4 +1,4 @@
-# CodeLearn — Impara a Programmare   |   Versione 1.0.2h-2
+# CodeLearn — Impara a Programmare   |   Versione 1.0.2j-3
 
 [![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)](https://react.dev/)
@@ -25,8 +25,6 @@
 
 ![GitHub License](https://img.shields.io/github/license/PiBOH/CodeLearn?style=flat&cacheSeconds=1)
 
-***
->versione 1.0.2j in fase di sviluppo
 ---
 
 ## 🚀 Caratteristiche
@@ -40,12 +38,15 @@
 - **PWA + APK Android** — installabile su iOS (via Safari -> deploy necessario per ultima versione, altrimenti usa la demo) e Android (via APK)
 
 ---
+
 ## 💽 Prova Versione Demo
 
 L'app viene deployata automaticamente su Vercel e accessibile da qualsiasi browser moderno senza bisogno di installare niente, funziona su tutti i sistemi operativi (dal link)
 
 https://code-learn-ruddy.vercel.app/  
-[![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn?include_prereleases&style=flat-square&cacheSeconds=1)](https://code-learn-ruddy.vercel.app/) 
+[![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn?include_prereleases&style=flat-square&cacheSeconds=1)
+](https://code-learn-ruddy.vercel.app/
+) 
  
 *(se la versione è su sfondo arancione allora aprendo il link potrai usare una pre-release, se invece ha lo sfondo azzurro allora vuoldire he aprendo il link userai una release stabile)*
 

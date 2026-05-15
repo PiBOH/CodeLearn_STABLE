@@ -111,27 +111,22 @@ export function AppProvider({ children }: { children: ReactNode }) {
     setProgress(prev => {
       if (prev.completedLessons.includes(lessonId)) return prev;
 
-      // ── Lezioni & XP ──────────────────────────────────────────────
       const newCompleted = [...prev.completedLessons, lessonId];
       const newXp        = prev.xp + xp;
       const newLevel     = Math.floor(newXp / 100) + 1;
 
-      // ── Progresso corso ───────────────────────────────────────────
       const newCourseProgress = { ...prev.courseProgress };
       newCourseProgress[courseId] = (newCourseProgress[courseId] || 0) + 1;
 
-      // ── Corsi avviati (per Poliglotta) ────────────────────────────
       const newStarted = prev.startedCourses.includes(courseId)
         ? prev.startedCourses
         : [...prev.startedCourses, courseId];
 
-      // ── Streak reale ──────────────────────────────────────────────
       const lastActive = localStorage.getItem('codelearn-last-active');
       const { streak: newStreak, lastActive: newLastActive } =
         computeStreak(prev.streak, lastActive);
       localStorage.setItem('codelearn-last-active', newLastActive);
 
-      // ── Badge ─────────────────────────────────────────────────────
       const newBadges = evaluateBadges(
         newCompleted.length,
         newLevel,
@@ -140,10 +135,11 @@ export function AppProvider({ children }: { children: ReactNode }) {
         [...prev.badges],
       );
 
-      // Callback con i badge appena sbloccati in questa sessione
+      // Salva i badge appena sbloccati in una chiave temporanea,
+      // così il callback viene chiamato UNA SOLA VOLTA fuori dal setter
       const justUnlocked = newBadges.filter(id => !prev.badges.includes(id));
-      if (justUnlocked.length > 0) {
-        setTimeout(() => onNewBadges?.(justUnlocked), 300);
+      if (justUnlocked.length > 0 && onNewBadges) {
+        localStorage.setItem('codelearn-pending-badges', JSON.stringify(justUnlocked));
       }
 
       const next: UserProgress = {
@@ -160,6 +156,16 @@ export function AppProvider({ children }: { children: ReactNode }) {
       localStorage.setItem('codelearn-progress', JSON.stringify(next));
       return next;
     });
+
+    // Legge i badge pendenti DOPO che il setter ha terminato (fuori dal ciclo React)
+    setTimeout(() => {
+      const pending = localStorage.getItem('codelearn-pending-badges');
+      if (pending) {
+        localStorage.removeItem('codelearn-pending-badges');
+        const ids: string[] = JSON.parse(pending);
+        if (ids.length > 0) onNewBadges?.(ids);
+      }
+    }, 350);
   }, []);
 
   const hasCompleted = useCallback(

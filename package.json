@@ -1,9 +1,9 @@
 {
   "name": "codelearn",
   "private": true,
-  "version": "1.0.2j-2_BETA",
+  "version": "1.0.2j-3_STABLE",
   "author": "PiBOH",
-  "description": "CodeLearn_STABLE_V1.0.2j-2 — App educativa per imparare a programmare",
+  "description": "CodeLearn_STABLE_V1.0.2j-3 — App educativa per imparare a programmare",
   "type": "module",
   "scripts": {
     "dev": "vite",
