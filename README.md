@@ -1,4 +1,4 @@
-# CodeLearn — Impara a Programmare   |   Versione 1.0.2g-13
+# CodeLearn — Impara a Programmare   |   Versione 1.0.2h-2
 
 [![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)](https://react.dev/)
@@ -26,12 +26,9 @@
 ![GitHub License](https://img.shields.io/github/license/PiBOH/CodeLearn?style=flat&cacheSeconds=1)
 
 ---
->la versione 1.0.2h è in fase di sviluppo. (previste nuove funzioni segrete....)
->
 >la versione 1.0.2i è in fase di sviluppo. (fix della streack non funzionante)
 >
 >la versione 1.0.2j è in fase di sviluppo. (fix di alcuni badge non funzionanti...)
-
 ***
 
 ## 🚀 Caratteristiche
@@ -48,7 +45,7 @@
 
 ## 💽 Prova Versione Demo
 
-L'app è deployata su Vercel e accessibile da qualsiasi browser moderno senza bisogno di installare niente, funziona su tutti i sistemi operativi (dal link)
+L'app viene deployata automaticamente su Vercel e accessibile da qualsiasi browser moderno senza bisogno di installare niente, funziona su tutti i sistemi operativi (dal link)
 
 https://code-learn-ruddy.vercel.app/  
 [![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn?include_prereleases&style=flat-square&cacheSeconds=1)
