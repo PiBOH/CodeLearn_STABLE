@@ -57,7 +57,7 @@ https://codelearn-73ci.arcada.app
 N.B. la ![release](https://img.shields.io/badge/release-1.0.2d-ffffff?style=flat&color=21a7f5) contiene molti bug durante l' esecuzione di vari percorsi (impossibilità di completarli).
 Quindi se ti interessa usarla come si deve consiglio di usare la demo della [![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn?include_prereleases&style=flat&cacheSeconds=1)](https://code-learn-ruddy.vercel.app/
 )
-oppure di scaricarti sempre l'ultima versione o fare da te il deploy
+oppure di scaricarti sempre l'ultima versione e/o fare da te il deploy
 
 ---
 
