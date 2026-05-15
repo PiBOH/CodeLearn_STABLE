@@ -23,6 +23,7 @@ interface AppContextType {
   completeLesson: (lessonId: string, courseId: string, xp: number) => void;
   hasCompleted: (lessonId: string) => boolean;
   getCourseProgress: (courseId: string, totalLessons: number) => number;
+  unlockBadge: (badgeId: string) => void;
   onboardingDone: boolean;
   setOnboardingDone: (v: boolean) => void;
   username: string;
@@ -46,6 +47,15 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const setUsername = useCallback((v: string) => {
     setUsernameState(v);
     localStorage.setItem('codelearn-username', v);
+  }, []);
+
+  const unlockBadge = useCallback((badgeId: string) => {
+    setProgress(prev => {
+      if (prev.badges.includes(badgeId)) return prev;
+      const next = { ...prev, badges: [...prev.badges, badgeId] };
+      localStorage.setItem('codelearn-progress', JSON.stringify(next));
+      return next;
+    });
   }, []);
 
   const completeLesson = useCallback((lessonId: string, courseId: string, xp: number) => {
@@ -96,6 +106,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
       completeLesson,
       hasCompleted,
       getCourseProgress,
+      unlockBadge,
       onboardingDone,
       setOnboardingDone: handleOnboarding,
       username,

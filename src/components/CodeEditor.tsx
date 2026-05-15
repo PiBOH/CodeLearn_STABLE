@@ -91,7 +91,7 @@ export default function CodeEditor({
     const codeNormalized = normalizeText(code);
 
     // VALIDAZIONE SELETTIVA
-    // Bypass SOLO per i linguaggi che mostravano bug negli screenshot.
+    // Bypass SOLO per i linguaggi che mostravano bug durante lo svolgimento del codice.
 
     const noControlLanguages = [
       'python',

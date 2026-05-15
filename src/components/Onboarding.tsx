@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Code2, Trophy, Zap, ChevronRight, Sparkles } from 'lucide-react';
 import { useApp } from '../context/AppContext';
+import { useToast } from '../context/ToastContext';
 
 const slides = [
   {
@@ -29,7 +30,8 @@ const slides = [
 
 export default function Onboarding() {
   const [step, setStep] = useState(0);
-  const { setOnboardingDone, setUsername, username } = useApp();
+  const { setOnboardingDone, setUsername, unlockBadge } = useApp();
+  const { showToast } = useToast();
   const [nameInput, setNameInput] = useState('');
 
   const next = () => {
@@ -37,7 +39,25 @@ export default function Onboarding() {
   };
 
   const finish = () => {
-    if (nameInput.trim()) setUsername(nameInput.trim());
+    const trimmed = nameInput.trim();
+    const hour = new Date().getHours();
+    const isNight = hour >= 0 && hour < 5;
+
+    // ── Gufo Notturno ──────────────────────────────────────────────────
+    if (isNight) {
+      showToast("Le grandi idee nascono di notte. Badge 'Gufo Notturno' sbloccato! 🦉", 'info');
+      unlockBadge('gufo-notturno');
+    }
+
+    // ── Godmode / Furbetto ─────────────────────────────────────────────
+    if (trimmed === 'PiBOH') {
+      showToast('Godmode unlocked 🔓', 'success');
+    } else if (trimmed.toLowerCase() === 'piboh') {
+      showToast('Hai provato a usare i poteri del creatore... ma quello non sei tu! 👁️', 'warning');
+      unlockBadge('furbetto');
+    }
+
+    if (trimmed) setUsername(trimmed);
     setOnboardingDone(true);
   };
 
@@ -71,6 +91,7 @@ export default function Onboarding() {
                 type="text"
                 value={nameInput}
                 onChange={e => setNameInput(e.target.value)}
+                onKeyDown={e => e.key === 'Enter' && finish()}
                 placeholder="Il tuo nome"
                 className="w-full px-4 py-3 rounded-xl border-2 border-indigo-100 focus:border-indigo-500 focus:outline-none text-slate-800 bg-white shadow-sm"
               />

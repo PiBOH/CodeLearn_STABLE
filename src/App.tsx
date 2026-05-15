@@ -1,6 +1,8 @@
+import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { AppProvider, useApp } from './context/AppContext';
+import { ToastProvider, useToast } from './context/ToastContext';
 import Onboarding from './components/Onboarding';
 import Dashboard from './components/Dashboard';
 import BottomNav from './components/BottomNav';
@@ -13,8 +15,21 @@ import Leaderboard from './components/Leaderboard';
 import CareerPaths from './components/CareerPaths';
 
 function AppContent() {
-  const { onboardingDone } = useApp();
+  const { onboardingDone, progress, unlockBadge } = useApp();
+  const { showToast } = useToast();
   const location = useLocation();
+
+  // Badge "Gufo Notturno" — check also when returning to the app (post-onboarding)
+  useEffect(() => {
+    if (!onboardingDone) return;
+    const hour = new Date().getHours();
+    const isNight = hour >= 0 && hour < 5;
+    if (isNight && !progress.badges.includes('gufo-notturno')) {
+      showToast("Le grandi idee nascono di notte. Badge 'Gufo Notturno' sbloccato! 🦉", 'info');
+      unlockBadge('gufo-notturno');
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   if (!onboardingDone) {
     return <Onboarding />;
@@ -51,11 +66,13 @@ function AppContent() {
 
 function App() {
   return (
-    <AppProvider>
-      <BrowserRouter>
-        <AppContent />
-      </BrowserRouter>
-    </AppProvider>
+    <ToastProvider>
+      <AppProvider>
+        <BrowserRouter>
+          <AppContent />
+        </BrowserRouter>
+      </AppProvider>
+    </ToastProvider>
   );
 }
 
