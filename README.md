@@ -27,6 +27,10 @@
 
 ---
 >la versione 1.0.2h è in fase di sviluppo. (previste nuove funzioni segrete....)
+>
+>la versione 1.0.2i è in fase di sviluppo
+>la versione 1.0.2j è in fase di sviluppo 
+
 ***
 
 ## 🚀 Caratteristiche
