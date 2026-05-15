@@ -25,6 +25,8 @@
 
 ![GitHub License](https://img.shields.io/github/license/PiBOH/CodeLearn?style=flat&cacheSeconds=1)
 
+***
+>versione 1.0.2j in fase di sviluppo
 ---
 
 ## 🚀 Caratteristiche
@@ -38,7 +40,6 @@
 - **PWA + APK Android** — installabile su iOS (via Safari -> deploy necessario per ultima versione, altrimenti usa la demo) e Android (via APK)
 
 ---
-
 ## 💽 Prova Versione Demo
 
 L'app viene deployata automaticamente su Vercel e accessibile da qualsiasi browser moderno senza bisogno di installare niente, funziona su tutti i sistemi operativi (dal link)
