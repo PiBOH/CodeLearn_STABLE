@@ -31,7 +31,7 @@
 ***
 > Con il prossimo aggiornamento è previsto un sistema "Cloud" basato sul tuo username che ti permetterà di sincronizzare i progressi fatti tra i vari dispositivi con cui hai fatto l' accesso.
 >
-> di conseguenza è anche prevista una "Modalità ospite" la quale non salva il tuo username e progressi sul Cloud ma li elimina non appena chiudi l'app/finestra del browser. 
+> Di conseguenza è anche prevista una *"Modalità ospite"* la quale non salva il tuo username e progressi sul Cloud ma li elimina non appena chiudi l'app/finestra del browser. 
 >La modalità ospite sarà attivabile digitando `-TEMP` alla fine del tuo nome.
 ---
 
