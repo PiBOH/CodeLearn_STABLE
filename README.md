@@ -34,7 +34,7 @@
 - **10 linguaggi di programmazione** — Python, JavaScript, Java, Kotlin, Swift, C#, C++, C, PHP, HTML
 - **100+ lezioni** — teoria, esercizi pratici, quiz e progetti
 - **Editor di codice integrato** — con syntax highlighting per tutti i linguaggi
-- **Gamification** — XP, livelli, badge, streak giornalieri, sfide
+- **Gamification** — XP, livelli, badge, streak,sfida giornaliera,easter egg.
 - **Percorsi di carriera** — Frontend, Backend, Mobile, Full Stack, Systems, Game Dev
 - **Classifica** — confrontati con altri studenti
 - **PWA + APK Android** — installabile su iOS (via Safari -> deploy necessario per ultima versione, altrimenti usa la demo) e Android (via APK)
