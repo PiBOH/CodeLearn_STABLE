@@ -1,4 +1,6 @@
-# CodeLearn — Impara a Programmare   |   Versione 1.0.2h-2
+# CodeLearn — Impara a Programmare   |   Versione 1.0.2j-3
+
+>*(impara le basi della programmazione)*
 
 [![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)](https://react.dev/)
@@ -9,7 +11,7 @@
 [![Java](https://img.shields.io/badge/Java-ffffff?logo=openjdk&style=flat&color=f34006&logoColor=000000)](https://www.java.com/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ffffff?logo=javascript&style=flat&color=000000&logoColor=F7DF1E)](https://www.javascript.com/)
 ![css](https://img.shields.io/badge/css-ffffff?logo=csswizardry&style=flat&color=0c0b0b&logoColor=F43059)
-[![Vercel App Hosting](https://img.shields.io/badge/Vercel%20App%20Hosting-ffffff?logo=vercel&style=flat&color=0b0b0c&logoColor=ffffff)](https://vercel.com/)
+[![Vercel App Hosting](https://img.shields.io/badge/Vercel%20App%20Hosting-ffffff?logo=vercel&style=flat&color=0b0b0c&logoColor=ffffff)](https://code-learn-ruddy.vercel.app/)
 
 ![Android 14+](https://img.shields.io/badge/Android%2014+-ffffff?logo=android&style=flat&color=0a0808&logoColor=3DDC84)
 [![Windows](https://badgen.net/badge/icon/windows?icon=windows&label)](https://microsoft.com/windows/)
@@ -19,24 +21,21 @@
 [![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn?cacheSeconds=1&link=https%3A%2F%2Fgithub.com%2FPiBOH%2FCodeLearn%2Freleases)](https://github.com/PiBOH/CodeLearn/releases)
 [![GitHub Release Date](https://img.shields.io/github/release-date/PiBOH/CodeLearn?display_date=published_at&style=flat)](https://github.com/PiBOH/CodeLearn/releases)
 [![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/PiBOH/CodeLearn/total?style=flat&logo=GitHub&cacheSeconds=1)](https://github.com/PiBOH/CodeLearn/releases)
+![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/PiBOH/CodeLearn/latest/total?style=flat&logo=GitHub&cacheSeconds=1)
 ![GitHub forks](https://img.shields.io/github/forks/PiBOH/CodeLearn?style=social&logo=GitHub&cacheSeconds=1)
 ![GitHub last commit](https://img.shields.io/github/last-commit/PiBOH/CodeLearn?style=flat)
-[![GitHub project issues](https://img.shields.io/github/issues/PiBOH/CodeLearn.svg)]([https://github.com/PiBOH/CodeLearn/issues)
+[![GitHub project issues](https://img.shields.io/github/issues/PiBOH/CodeLearn.svg)](https://github.com/PiBOH/CodeLearn/issues)
 
-![GitHub License](https://img.shields.io/github/license/PiBOH/CodeLearn?style=flat&cacheSeconds=1)
+[![GitHub License](https://img.shields.io/github/license/PiBOH/CodeLearn?style=flat&cacheSeconds=1)](https://github.com/PiBOH/CodeLearn/blob/main/LICENSE)
 
 ---
->la versione 1.0.2i è in fase di sviluppo. (fix della streack non funzionante)
->
->la versione 1.0.2j è in fase di sviluppo. (fix di alcuni badge non funzionanti...)
-***
 
 ## 🚀 Caratteristiche
 
 - **10 linguaggi di programmazione** — Python, JavaScript, Java, Kotlin, Swift, C#, C++, C, PHP, HTML
 - **100+ lezioni** — teoria, esercizi pratici, quiz e progetti
 - **Editor di codice integrato** — con syntax highlighting per tutti i linguaggi
-- **Gamification** — XP, livelli, badge, streak giornalieri, sfide
+- **Gamification** — XP, livelli, badge, streak,sfida giornaliera,easter egg.
 - **Percorsi di carriera** — Frontend, Backend, Mobile, Full Stack, Systems, Game Dev
 - **Classifica** — confrontati con altri studenti
 - **PWA + APK Android** — installabile su iOS (via Safari -> deploy necessario per ultima versione, altrimenti usa la demo) e Android (via APK)
@@ -61,7 +60,7 @@ https://codelearn-73ci.arcada.app
 N.B. la ![release](https://img.shields.io/badge/release-1.0.2d-ffffff?style=flat&color=21a7f5) contiene molti bug durante l' esecuzione di vari percorsi (impossibilità di completarli).
 Quindi se ti interessa usarla come si deve consiglio di usare la demo della [![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn?include_prereleases&style=flat&cacheSeconds=1)](https://code-learn-ruddy.vercel.app/
 )
-oppure di scaricarti sempre l'ultima versione o fare da te il deploy
+oppure di scaricarti sempre l'ultima versione e/o fare da te il deploy
 
 ---
 
@@ -152,4 +151,6 @@ codelearn/
 
 GNU GPL v3.0
 
-![GitHub License](https://img.shields.io/github/license/PiBOH/CodeLearn?style=flat&cacheSeconds=1)
+
+
+[![GitHub License](https://img.shields.io/github/license/PiBOH/CodeLearn?style=flat&cacheSeconds=1)](https://github.com/PiBOH/CodeLearn/blob/main/LICENSE)
