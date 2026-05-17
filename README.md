@@ -23,6 +23,7 @@
 [![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/PiBOH/CodeLearn/total?style=flat&logo=GitHub&cacheSeconds=1)](https://github.com/PiBOH/CodeLearn/releases)
 ![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/PiBOH/CodeLearn/latest/total?style=flat&logo=GitHub&cacheSeconds=1)
 ![GitHub forks](https://img.shields.io/github/forks/PiBOH/CodeLearn?style=social&logo=GitHub&cacheSeconds=1)
+![GitHub Repo stars](https://img.shields.io/github/stars/PiBOH/CodeLearn?style=social&cacheSeconds=5)
 ![GitHub last commit](https://img.shields.io/github/last-commit/PiBOH/CodeLearn?style=flat)
 [![GitHub project issues](https://img.shields.io/github/issues/PiBOH/CodeLearn.svg)](https://github.com/PiBOH/CodeLearn/issues)
 
