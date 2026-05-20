@@ -1,23 +1,47 @@
-npm install
-npm run build
-npx cap sync android
-cd android
-./gradlew assembleDebug
-cd..
-Remove-Item -Recurse -Force node_modules
-Remove-Item package-lock.json
+GUIDA RAPIDA BUILD APK — CodeLearn BETA V1.1.1a-5
 
+─── PRIMA VOLTA (o se gradlew.bat non funziona) ────────────────────────────
 
-il file apk si troverà in
+1. npm install
+
+2. .\FIX_GRADLE.ps1       ← esegui questo script dalla root del progetto
+                             copia il gradle-wrapper.jar vero da node_modules
+                             (serve solo la prima volta o dopo npm install)
+
+3. npm run build
+
+4. npx cap sync android
+
+5. cd android
+
+6. .\gradlew.bat assembleDebug    ← su Windows usa SEMPRE gradlew.bat, non gradlew
+
+cd ..
+
+il file apk si troverà in:
 \android\app\build\outputs\apk\debug\app-debug.apk
 
+─── OPPURE: apri con Android Studio ─────────────────────────────────────────
 
-se la vuoi usare su un dispositivo non android usa
+1. npm install
+2. npm run build
+3. npx cap sync android
+4. npx cap open android
+5. In Android Studio: Build → Build APK(s)
+
+─── SE VUOI USARLA NEL BROWSER (non Android) ────────────────────────────────
 
 Remove-Item -Recurse -Force node_modules
 Remove-Item package-lock.json
 npm install
 npm run dev
-poi apri un browser e vai all'indirizzo
 
+poi apri un browser e vai all'indirizzo:
 http://localhost:5173/
+
+─── NOTE ─────────────────────────────────────────────────────────────────────
+Su Windows PowerShell usa SEMPRE:
+  .\gradlew.bat assembleDebug
+  (NON ./gradlew — quello è per Linux/Mac)
+
+Per problemi vedere WINDOWS_BUILD_GUIDE.md

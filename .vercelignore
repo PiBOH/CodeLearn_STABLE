@@ -1,8 +1,5 @@
 android/
-node_modules/
-.git/
-.vscode/
-.idea/
-*.log
 *.apk
-tmp/
+node_modules/
+.env
+.env.local
