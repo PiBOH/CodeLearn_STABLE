@@ -34,8 +34,9 @@ jobs:
       - name: Build del progetto Web (Vite)
         run: npm run build
 
-      - name: Sincronizza Capacitor con Android
+      - name: Inizializza e Sincronizza Capacitor Android
         run: |
+          npx cap add android
           npx cap sync
           
       - name: Build dell'APK (Gradle Debug)
