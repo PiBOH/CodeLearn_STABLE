@@ -20,8 +20,8 @@ import {
 
 // ── Costanti ──────────────────────────────────────────────────────────────────
 
-export const APP_VERSION      = '1.1.1a-7';
-export const APP_VERSION_FULL = '1.1.1a-7 - The Synch Update';
+export const APP_VERSION      = '1.1.1c-1';
+export const APP_VERSION_FULL = '1.1.1c-1 - The Synch Update';
 
 /**
  * Nomi base che hanno accesso alla GodMode.
@@ -221,49 +221,125 @@ export function AppProvider({ children }: { children: ReactNode }) {
     () => isGodModeUser(localStorage.getItem(LS_USERNAME) ?? ''),
   );
 
-  // ── Blocco screenshot e selezione testo per utenti non-GodMode ─────────────
+  // ── Blocco screenshot, stampa e selezione testo per utenti non-GodMode ──────
   useEffect(() => {
     const body = document.body;
     const html = document.documentElement;
 
-    if (!isGodMode) {
-      // Blocca selezione testo via CSS
-      body.style.userSelect = 'none';
-      body.style.webkitUserSelect = 'none';
-      html.style.userSelect = 'none';
-      html.style.webkitUserSelect = 'none';
+    // ── Inietta / rimuovi stile globale di protezione ─────────────────────────
+    const STYLE_ID = 'cl-protection-style';
+    let styleEl = document.getElementById(STYLE_ID) as HTMLStyleElement | null;
 
-      // Blocca tasto Print Screen e combinazioni comuni di screenshot
-      const blockScreenshot = (e: KeyboardEvent) => {
-        if (
-          e.key === 'PrintScreen' ||
-          (e.metaKey && e.shiftKey && (e.key === '3' || e.key === '4' || e.key === '5')) || // Mac screenshot
-          (e.ctrlKey && e.key === 'PrintScreen')
-        ) {
+    if (!isGodMode) {
+
+      // ── CSS protezione ───────────────────────────────────────────────────────
+      if (!styleEl) {
+        styleEl = document.createElement('style');
+        styleEl.id = STYLE_ID;
+        document.head.appendChild(styleEl);
+      }
+      styleEl.textContent = `
+        /* Blocca selezione testo */
+        *, *::before, *::after {
+          -webkit-user-select: none !important;
+          user-select: none !important;
+        }
+        /* Blocco stampa: nasconde tutto il contenuto quando si stampa */
+        @media print {
+          html, body { display: none !important; visibility: hidden !important; }
+          * { display: none !important; }
+        }
+        /* Anti-screenshot su WebKit/mobile: sfoca il contenuto se la pagina
+           perde il focus (es. task switcher Android/iOS) */
+        body.cl-blurred * {
+          filter: blur(20px) !important;
+          transition: filter 0.1s !important;
+        }
+      `;
+
+      // ── Blocca selezione via JS (doppia protezione) ──────────────────────────
+      body.style.userSelect = 'none';
+      (body.style as CSSStyleDeclaration & { webkitUserSelect: string }).webkitUserSelect = 'none';
+      html.style.userSelect = 'none';
+      (html.style as CSSStyleDeclaration & { webkitUserSelect: string }).webkitUserSelect = 'none';
+
+      // ── Blocco tastiera: PrintScreen + Ctrl+P + Cmd+P + screenshot Mac ───────
+      const blockKeys = (e: KeyboardEvent) => {
+        const isPrint =
+          (e.ctrlKey  && e.key === 'p') ||   // Ctrl+P  (stampa Windows/Linux)
+          (e.metaKey  && e.key === 'p') ||   // Cmd+P   (stampa Mac)
+          e.key === 'PrintScreen'        ||   // Tasto Print Screen
+          (e.ctrlKey  && e.key === 'PrintScreen') ||
+          // Screenshot Mac: Cmd+Shift+3 / Cmd+Shift+4 / Cmd+Shift+5
+          (e.metaKey  && e.shiftKey && ['3','4','5','s','S'].includes(e.key));
+
+        if (isPrint) {
           e.preventDefault();
           e.stopPropagation();
         }
       };
-      document.addEventListener('keydown', blockScreenshot, true);
+      document.addEventListener('keydown', blockKeys, true);
 
-      // Su mobile: blocca il menu contestuale (long press)
+      // ── Blocco menu contestuale mobile (long press) ───────────────────────────
       const blockContext = (e: Event) => e.preventDefault();
       document.addEventListener('contextmenu', blockContext);
 
-      return () => {
-        body.style.userSelect = '';
-        body.style.webkitUserSelect = '';
-        html.style.userSelect = '';
-        html.style.webkitUserSelect = '';
-        document.removeEventListener('keydown', blockScreenshot, true);
-        document.removeEventListener('contextmenu', blockContext);
+      // ── Blocco stampa via API (beforeprint / afterprint) ──────────────────────
+      const blockPrint = () => {
+        // Nasconde il body prima che il browser invii alla stampante
+        body.style.display = 'none';
       };
+      const restoreAfterPrint = () => {
+        body.style.display = '';
+      };
+      window.addEventListener('beforeprint', blockPrint);
+      window.addEventListener('afterprint', restoreAfterPrint);
+
+      // ── Anti-screenshot mobile: sfoca quando la pagina perde visibilità ───────
+      // Cattura il task switcher di Android/iOS che è il momento in cui
+      // l'OS può scattare uno screenshot di sistema
+      const handleVisibility = () => {
+        if (document.hidden || document.visibilityState === 'hidden') {
+          body.classList.add('cl-blurred');
+        } else {
+          body.classList.remove('cl-blurred');
+        }
+      };
+      document.addEventListener('visibilitychange', handleVisibility);
+
+      // Sfoca anche se la finestra perde il focus (Windows/Mac)
+      const handleBlur  = () => body.classList.add('cl-blurred');
+      const handleFocus = () => body.classList.remove('cl-blurred');
+      window.addEventListener('blur',  handleBlur);
+      window.addEventListener('focus', handleFocus);
+
+      return () => {
+        // Ripristina tutto
+        styleEl!.textContent = '';
+        body.style.userSelect = '';
+        (body.style as CSSStyleDeclaration & { webkitUserSelect: string }).webkitUserSelect = '';
+        html.style.userSelect = '';
+        (html.style as CSSStyleDeclaration & { webkitUserSelect: string }).webkitUserSelect = '';
+        body.style.display = '';
+        body.classList.remove('cl-blurred');
+        document.removeEventListener('keydown', blockKeys, true);
+        document.removeEventListener('contextmenu', blockContext);
+        window.removeEventListener('beforeprint', blockPrint);
+        window.removeEventListener('afterprint', restoreAfterPrint);
+        document.removeEventListener('visibilitychange', handleVisibility);
+        window.removeEventListener('blur',  handleBlur);
+        window.removeEventListener('focus', handleFocus);
+      };
+
     } else {
-      // GodMode: rimuove tutte le restrizioni
+      // ── GodMode: rimuove tutte le restrizioni ─────────────────────────────────
+      if (styleEl) styleEl.textContent = '';
       body.style.userSelect = '';
-      body.style.webkitUserSelect = '';
+      (body.style as CSSStyleDeclaration & { webkitUserSelect: string }).webkitUserSelect = '';
       html.style.userSelect = '';
-      html.style.webkitUserSelect = '';
+      (html.style as CSSStyleDeclaration & { webkitUserSelect: string }).webkitUserSelect = '';
+      body.style.display = '';
+      body.classList.remove('cl-blurred');
     }
   }, [isGodMode]);
 
