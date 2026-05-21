@@ -94,8 +94,8 @@ cd ..
   TESTARE L'APP NEL BROWSER (senza buildare l'APK)
 ────────────────────────────────────────────────────────────
 
-  Remove-Item -Recurse -Force node_modules
-  Remove-Item package-lock.json
+  Remove-Item -Recurse -Force node_modules	#solo se avevi già fatto npm install
+  Remove-Item package-lock.json			#solo se avevi già fatto npm install
   npm install
   npm run dev
 
