@@ -14,7 +14,7 @@
 [![Vercel App Hosting](https://img.shields.io/badge/Vercel%20App%20Hosting-ffffff?logo=vercel&style=flat&color=0b0b0c&logoColor=ffffff)](https://code-learn-ruddy.vercel.app/)
 
 [![Vercel Deploy](https://deploy-badge.vercel.app/vercel/code-learn-ruddy)](https://code-learn-ruddy.vercel.app/)
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/PiBOH/CodeLearn/android-build.yml?style=flat&logo=Android&cacheSeconds=10)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/PiBOH/CodeLearn/android-build.yml?style=flat&logo=Android&cacheSeconds=10)](https://github.com/PiBOH/CodeLearn/actions)
 
 ![Android 14+](https://img.shields.io/badge/Android%2014+-ffffff?logo=android&style=flat&color=0a0808&logoColor=3DDC84)
 [![Windows](https://badgen.net/badge/icon/windows?icon=windows&label)](https://microsoft.com/windows/)
