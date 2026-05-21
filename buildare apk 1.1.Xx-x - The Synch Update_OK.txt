@@ -39,7 +39,7 @@
 
 
 ────────────────────────────────────────────────────────────
-  PRIMA BUILD (solo la prima volta su questo PC)
+  BUILD FILE APK
 ────────────────────────────────────────────────────────────
 
   Dalla ROOT del progetto in PowerShell:
