@@ -55,9 +55,7 @@
 L'app viene deployata automaticamente su Vercel e accessibile da qualsiasi browser moderno senza bisogno di installare niente, funziona su tutti i sistemi operativi (dal link)
 
 https://code-learn-ruddy.vercel.app/  
-[![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn?include_prereleases&style=flat-square&cacheSeconds=1)
-](https://code-learn-ruddy.vercel.app/
-) 
+[![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn?include_prereleases&style=flat-square&cacheSeconds=1)](https://code-learn-ruddy.vercel.app/) 
  
 *(se la versione è su sfondo arancione allora aprendo il link potrai usare una pre-release, se invece ha lo sfondo azzurro allora vuoldire he aprendo il link userai una release stabile)*
 
@@ -65,9 +63,8 @@ https://codelearn-73ci.arcada.app
 [![release](https://img.shields.io/badge/release-1.0.2d-ffffff?style=flat-square&color=21a7f5)](https://codelearn-73ci.arcada.app)
  
 
-N.B. la ![release](https://img.shields.io/badge/release-1.0.2d-ffffff?style=flat&color=21a7f5) contiene molti bug durante l' esecuzione di vari percorsi (impossibilità di completarli).
-Quindi se ti interessa usarla come si deve consiglio di usare la demo della [![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn?include_prereleases&style=flat&cacheSeconds=1)](https://code-learn-ruddy.vercel.app/
-)
+N.B. la release 1.0.2d(https://img.shields.io/badge/release-1.0.2d-ffffff?style=flat&color=21a7f5) contiene molti bug durante l' esecuzione di vari percorsi (impossibilità di completarli).
+Quindi se ti interessa usarla come si deve consiglio di usare la demo della [![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn?include_prereleases&style=flat&cacheSeconds=1)](https://code-learn-ruddy.vercel.app/)
 oppure di scaricarti sempre l'ultima versione e/o fare da te il deploy
 
 ---
@@ -115,7 +112,7 @@ L'APK si troverà in `android/app/build/outputs/apk/debug/app-debug.apk`.
 ---
 ## 📱 APK Prebuildato ![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn?cacheSeconds=1&link=https%3A%2F%2Fgithub.com%2FPiBOH%2FCodeLearn%2Freleases)
 
-Mi trovi alla pagina delle [![release](https://img.shields.io/badge/release-ffffff?style=flat-square&color=121212)](https://github.com/PiBOH/CodeLearn/releases)
+Mi trovi alla pagina delle [release](https://github.com/PiBOH/CodeLearn/releases)
 
 
 ---
@@ -157,8 +154,4 @@ codelearn/
 
 ## 📝 Licenza
 
-GNU GPL v3.0
-
-
-
-[![GitHub License](https://img.shields.io/github/license/PiBOH/CodeLearn?style=flat&cacheSeconds=1)](https://github.com/PiBOH/CodeLearn/blob/main/LICENSE)
+[GNU GPL v3.0](https://github.com/PiBOH/CodeLearn/blob/main/LICENSE)
