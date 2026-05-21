@@ -28,8 +28,9 @@ jobs:
       - name: Configura Android SDK
         uses: android-actions/setup-android@v3
 
+      # MODIFICATO QUI: Usiamo "npm install" al posto di "npm ci"
       - name: Installa le dipendenze
-        run: npm ci
+        run: npm install
 
       - name: Build del progetto Web (Vite)
         run: npm run build
