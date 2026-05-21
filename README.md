@@ -37,6 +37,8 @@
 >
 > Di conseguenza è anche prevista una *"Modalità ospite"* la quale non salva il tuo username e progressi sul Cloud ma li elimina non appena chiudi l'app/finestra del browser. 
 >La modalità ospite sarà attivabile digitando `-GUEST` alla fine del tuo nome.
+>
+> è anche prevista la modalità offline attivabile digitando `-LOCAL` alla fine del tuo username, salvando quindi i progressi solo in locale (progressi salvati in locale=nessuna sincronizzazione tra telefono e pc.
 ---
 
 ## 🚀 Caratteristiche
