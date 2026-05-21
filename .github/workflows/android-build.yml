@@ -19,11 +19,12 @@ jobs:
         with:
           node-cache: 'npm'
 
-      - name: Configura Java JDK 17
+      # MODIFICATO QUI: Aggiornato java-version a '21' per risolvere il problema del compilatore
+      - name: Configura Java JDK 21
         uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
-          java-version: '17'
+          java-version: '21'
 
       - name: Configura Android SDK
         uses: android-actions/setup-android@v3
@@ -37,14 +38,13 @@ jobs:
       - name: Inizializza e Sincronizza Capacitor Android
         run: |
           if [ ! -d "android" ]; then
-            echo "Cartella android non trouvata. Inizializzazione in corso..."
+            echo "Cartella android non trovata. Inizializzazione in corso..."
             npx cap add android
           else
             echo "Cartella android già presente. Salto l'aggiunta."
           fi
           npx cap sync
           
-      # MODIFICATO QUI: Aggiunto "chmod +x gradlew" per i permessi
       - name: Build dell'APK (Gradle Debug)
         run: |
           cd android
