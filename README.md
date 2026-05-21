@@ -50,9 +50,9 @@
 
 ---
 
-## 💽 Prova Versione Demo
+## 💽 Prova La Versione Demo
 
-L'app viene deployata automaticamente su Vercel e accessibile da qualsiasi browser moderno senza bisogno di installare niente, funziona su tutti i sistemi operativi (dal link)
+L'app viene deployata automaticamente su Vercel e resa accessibile da qualsiasi browser moderno senza bisogno di installare niente, funziona su tutti i sistemi operativi (dal link)
 
 https://code-learn-ruddy.vercel.app/  
 [![GitHub Release](https://img.shields.io/github/v/release/PiBOH/CodeLearn?include_prereleases&style=flat-square&cacheSeconds=1)](https://code-learn-ruddy.vercel.app/) 
