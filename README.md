@@ -15,6 +15,7 @@
 
 [![Vercel Deploy](https://deploy-badge.vercel.app/vercel/code-learn-ruddy)](https://code-learn-ruddy.vercel.app/)
 [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/PiBOH/CodeLearn/android-build.yml?style=flat&logo=Android&cacheSeconds=10)](https://github.com/PiBOH/CodeLearn/actions)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/PiBOH/CodeLearn/android.yml?style=flat&logo=Android&cacheSeconds=10)](https://github.com/PiBOH/CodeLearn/actions)
 
 ![Android 14+](https://img.shields.io/badge/Android%2014+-ffffff?logo=android&style=flat&color=0a0808&logoColor=3DDC84)
 [![Windows](https://badgen.net/badge/icon/windows?icon=windows&label)](https://microsoft.com/windows/)
