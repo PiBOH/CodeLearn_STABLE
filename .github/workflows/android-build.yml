@@ -36,7 +36,12 @@ jobs:
 
       - name: Inizializza e Sincronizza Capacitor Android
         run: |
-          npx cap add android
+          if [ ! -d "android" ]; then
+            echo "Cartella android non trovata. Inizializzazione in corso..."
+            npx cap add android
+          else
+            echo "Cartella android già presente. Salto l'aggiunta."
+          fi
           npx cap sync
           
       - name: Build dell'APK (Gradle Debug)
